@@ -3,14 +3,15 @@
 
 
 :root {
-    --primaryColor: #ed2124;
-    --seconderyColor: #ed2124;
-    --whiteColor: #fff;
-    --blackColor: #333333;
-    --softGreenColor: #feed23;
-    --darkGreyColor: #a7a7a7;
-    --greyColor: #f5f5f5;
-    --whiteHeader: #ffffff
+    --primaryColor: #ffffff;
+    --seconderyColor: #2e2b28;
+    --whiteColor: #3a3a3a;
+    --blackColor: #ffffff;
+    --softGreenColor: #ffc75e;
+    --darkGreyColor: #00ff15;
+    --greyColor: #ae8035;
+    --whiteHeader: #ffffff;
+    --marquee: #ffffff;
 }
 * {
     margin: 0;
@@ -87,9 +88,6 @@ body {
     justify-content: space-around;
     background-color: var(--whiteColor);
     border-radius: 50px;
-    box-shadow: 0 0 10px rgb(255, 4, 4),
-    0 0 10px rgb(248, 0, 0),
-    0 0 10px rgb(255, 0, 0);
 }
 .img img {
     width: 430px;
@@ -276,7 +274,7 @@ body {
     font-size: 100px;
     background-color: var(--softGreenColor);
     color: var(--primaryColor);
-    border-radius: 8px;
+    border-radius: 10px;
 }
 .filter-card:hover {
     background-color: var(--primaryColor);
@@ -388,19 +386,23 @@ img {
 
 
 .destination__grid {
-    margin-top: 4rem;
+    margin-top: 1rem;
     display: flex;
     flex-direction: row;
     gap: 1rem;
     height: 100%;
+    background-color: var(--greyColor);
+    border-radius: 30px;
+    font-size: 2.5rem;
 
 }
 .destination__card {
     width: 100%;
-    border-radius: 2rem;
+    border-radius: 1rem;
     display: flex;
     flex-direction: row;
     overflow: hidden;
+    font-size: 2.5rem;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
 }
 .destination__card img{
@@ -408,13 +410,15 @@ img {
     border-radius: 2rem;
     display: flex;
     flex-direction: row;
+    font-size: 2.5rem;
     overflow: hidden;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
 }
 .destination__details {
     width: 100%;
     background-color: var(--greyColor);
-    padding: 1rem 1.5rem;
+    padding: 1rem 1rem;
+    font-size: 2.5rem;
 }
 .destination__details div {
     margin-bottom: 1rem;
@@ -422,19 +426,27 @@ img {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
+    color: var(--marquee);
+    font-size: 2.5rem;
+
 }
 .destination__details h4 {
-    font-size: 3rem;
-    font-weight: 500;
-    color: var(--text-light);
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--marquee);
 }
 .destination__details h2 {
-    font-size: 4rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--marquee);
+}
+.destination__details p {
+    font-size: 2.5rem;
     font-weight: 500;
-    color: var(--text-light);
+    color: var(--marquee);
 }
 .destination__details {
-    font-size: 3rem;
+    font-size: 1rem;
     color: var(--text-light);
 }
 
@@ -509,11 +521,17 @@ img {
 }
 
 
-
+.line{
+    border-radius: 10px;
+    margin-top: 15px;
+    margin: 150wh;
+    background-color: #2e2b28;
+}
 .marquee {
     margin-top: 15px;
+    margin-bottom: 5px;
     font-size: 50px;
-    color: var(--blackColor);
+    color: var(--marquee);
 }
 .myButton {
     max-width: 500px;
@@ -762,6 +780,7 @@ input[type="text"], button {
 }
 
 
+
 #overlayImage {
     position: fixed;
     top: 25%;
@@ -790,8 +809,10 @@ input[type="text"], button {
     justify-self: center;
 }
 .material-icons{
-    font-size: 20px;
+    font-size: 40px;
 }
+
+
 
 @media screen and (max-width:1750px) {
     #overlayImage {
@@ -975,7 +996,7 @@ input[type="text"], button {
     .marquee {
         margin-top: 7px;
         font-size: 50px;
-        color: var(--blackColor);
+        color: var(--marquee);
     }
     .myButton {
         max-width: 300px;
@@ -1226,7 +1247,7 @@ input[type="text"], button {
     .marquee {
         margin-top: 15px;
         font-size: 20px;
-        color: var(--blackColor);
+        color: var(--marquee);
     }
     .user {
         display: flex;
@@ -1581,7 +1602,7 @@ input[type="text"], button {
     .marquee {
         margin-top: 5px;
         font-size: 20px;
-        color: var(--blackColor);
+        color: var(--marquee);
     }
     .myButton {
         max-width: 190px;
@@ -1726,8 +1747,8 @@ input[type="text"], button {
         justify-content: space-around;
         background-color: var(--whiteColor);
         border-radius: 50px;
-        box-shadow: 0 0 20px rgb(255, 4, 4),
-        0 0 10px rgb(255, 144, 144),
+        box-shadow: 0 0 20px rgb(255, 191, 0),
+        0 0 10px rgb(255, 162, 0),
         0 0 10px rgb(255, 255, 255);
     }
     .img img {
@@ -1735,4 +1756,137 @@ input[type="text"], button {
         border: none;
     }
 }
+
+
+
+
+
+
+
+
+
+
+  
+
+  .journey__grid {
+    margin-top: 0;
+    display: grid;
+    gap: 0 0;
+    color: white;
+  
+  }
+  .journey__card {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 10px;
+    margin-top: 12px;
+    color: white;
+  
+  }
+  .journey__card__bg {
+    padding: 3rem;
+    padding-top: 8rem;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+  
+  }
+  .journey__card:nth-child(1) {
+    background-image: url("./images/ofer.png");
+  }
+  .journey__card:nth-child(2) {
+    background-image: url("./images/ofer.png");
+  }
+  .journey__card:nth-child(3) {
+    background-image: url("./images/ofer.png");
+  }
+  .journey__card__bg h4 {
+    font-size: 2rem;
+    color: var(--white);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .journey__card__content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    background-color: var(--greyColor);
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    transition: 0.3s;
+    color: white;
+  
+  }
+  .journey__card:hover .journey__card__content {
+    top: 0;
+    color: white;
+  
+  }
+  .journey__card__content h4 {
+    margin-bottom: 1rem;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+  
+  }
+  .journey__card__content p {
+    
+    color: var(--extra-light);
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--white);
+  }
+  
+  
+  
+  
+
+
+  
+  .event__content {
+    display: grid;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: #2e2b28;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  .event__details {
+    text-align: center;
+  }
+  .event__details h3 {
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: "Noto Kufi Arabic", sans-serif;
+    color: var(--softGreenColor);
+  }
+  .event__details h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Noto Kufi Arabic", sans-serif;
+    color: var(--softGreenColor);
+  }
+  .event__details p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: "Noto Kufi Arabic", sans-serif;
+  }
+  .event__details .section__header {
+    margin-bottom: 1rem;
+  }
+  
 
