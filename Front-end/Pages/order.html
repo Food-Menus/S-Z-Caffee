@@ -1,10 +1,11 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../../Static/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" href="./../../Static/images/اساسيات/logo.png" type="image/x-icon">
     <title>ُSOZ Caffee</title>
 </head>
@@ -47,70 +48,81 @@
         </div>
     </div>
 
-    <script>
+    <script> 
         const orderElement = document.getElementById("order");
         const totalPriceElement = document.getElementById("totalPrice");
         const storedData = localStorage.getItem("cartItems");
-
+    
         if (storedData) {
             const dishes = JSON.parse(storedData);
             const dishCounts = {};
             const prices = {}; // تخزين الأسعار
-
+    
             const list = document.createElement('ul');
             let totalPrice = 0;
-
+    
             dishes.forEach(dish => {
                 dishCounts[dish.name] = (dishCounts[dish.name] || 0) + 1;
                 prices[dish.name] = dish.price; // افترض أن كل طبق يحتوي على سعره
             });
-
+    
             for (const dishName in dishCounts) {
                 const count = dishCounts[dishName];
                 totalPrice += prices[dishName] * count; // حساب السعر الإجمالي
-
+    
                 const listItem = document.createElement('li');
                 listItem.textContent = `${dishName} (عدد الطلبات: ${count}) - السعر: ${prices[dishName]} جنيه`;
-
+    
                 const deleteButton = document.createElement('button');
                 deleteButton.textContent = 'حذف العنصر'; 
                 deleteButton.classList.add('delete-button'); 
-
+    
                 deleteButton.addEventListener('click', function() {
-                    this.parentNode.remove();
-                    const storedData = JSON.parse(localStorage.getItem("cartItems"));
                     const itemToDelete = this.parentNode.textContent.split(' (')[0];
-                    const indexToDelete = storedData.findIndex(item => item.name === itemToDelete);
+                    const indexToDelete = dishes.findIndex(item => item.name === itemToDelete);
                     if (indexToDelete !== -1) {
-                        storedData.splice(indexToDelete, 1);
-                        localStorage.setItem("cartItems", JSON.stringify(storedData));
+                        dishes.splice(indexToDelete, 1);
+                        localStorage.setItem("cartItems", JSON.stringify(dishes));
+                        this.parentNode.remove();
+                        alert('تم حذف العنصر بنجاح');
+                        updateTotalPrice(); // تحديث السعر الإجمالي بعد الحذف
                     }
-                    alert('تم حذف العنصر بنجاح');
-                    location.reload();
                 });
-
+    
                 listItem.appendChild(deleteButton);
                 list.appendChild(listItem);
             }
-
+    
             orderElement.appendChild(list);
             totalPriceElement.textContent = `السعر الإجمالي: ${totalPrice} جنيه`;
         } else {
             orderElement.textContent = "لا توجد بيانات مخزنة";
+            totalPriceElement.textContent = "السعر الإجمالي: 0"; // تأكد من تعيين السعر إلى 0
         }
-
+    
         const clearCartButton = document.getElementById('clearCart');
-
+    
         function clearLocalStorage() {
             const confirmed = confirm("هل أنت متأكد من رغبتك في تفريغ سلة التسوق؟");
             if (confirmed) {
                 localStorage.clear();
                 alert('تم تفريغ سلة التسوق بنجاح');
-                location.reload();
+                orderElement.textContent = "لا توجد بيانات مخزنة"; // تحديث النص بعد التفريغ
+                totalPriceElement.textContent = "السعر الإجمالي: 0"; // إعادة تعيين السعر الإجمالي
             }
         }
-
+    
         clearCartButton.addEventListener('click', clearLocalStorage);
+    
+        function updateTotalPrice() {
+            // إعادة حساب السعر الإجمالي من البيانات المخزنة
+            const storedData = JSON.parse(localStorage.getItem("cartItems")) || [];
+            let totalPrice = 0;
+            storedData.forEach(dish => {
+                totalPrice += dish.price; // يمكنك تعديل هذا حسب الحاجة
+            });
+            totalPriceElement.textContent = `السعر الإجمالي: ${totalPrice} جنيه`;
+        }
     </script>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
