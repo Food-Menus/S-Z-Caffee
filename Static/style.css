@@ -746,7 +746,7 @@ input[type="text"], button {
     font-size: 20px;
 }
 #totalPrice {
-    font-size: 19px; 
+    font-size: 29px; 
     font-weight: bold; 
     color: #fd4b4b; 
     text-align: center;
@@ -756,7 +756,7 @@ input[type="text"], button {
     background-color: #f9f9f9; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
     margin: 20px auto;
-    width: 80%;
+    width: 40%;
 }
 
 
@@ -827,14 +827,12 @@ input[type="text"], button {
 
 
 
-  
-
-.journey__grid {
+  .journey__grid {
     margin-top: 0;
-    display: grid;
-    gap: 0 0;
+    display: grid; /* استخدام grid */
+    grid-template-columns: repeat(3, 1fr); /* إنشاء 3 أعمدة متساوية */
+    gap: 20px; /* المسافة بين البطاقات */
     color: white;
-  
   }
   .journey__card {
     position: relative;
@@ -844,12 +842,11 @@ input[type="text"], button {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 1rem;
-    margin-left: 2px;
-    margin-right: 2px;
-    margin-bottom: 10px;
-    margin-top: 12px;
     color: white;
-  
+    margin:20px auto;
+    color: #ffffff;
+    /* إزالة العرض المحدد */
+    width: 90%; 
   }
   .journey__card__bg {
     padding: 3rem;
@@ -1086,6 +1083,42 @@ input[type="text"], button {
     }
 }
 @media screen and (max-width:1000px) {
+
+    .journey__grid {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* إنشاء 3 أعمدة متساوية */
+    gap: 0 0;
+    color: white;
+    }
+    .journey__card {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 10px;
+    margin-top: 12px;
+    color: white;
+    width: 99%;
+    } 
+    #totalPrice {
+        font-size: 19px; 
+        font-weight: bold; 
+        color: #fd4b4b; 
+        text-align: center;
+        padding: 10px; 
+        border: 2px solid #311919; 
+        border-radius: 8px; 
+        background-color: #f9f9f9; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+        margin: 20px auto;
+        width: 80%;
+    }
     .destination__grid {
         margin-top: 4rem;
         display: flex;
