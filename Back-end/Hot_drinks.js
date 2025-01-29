@@ -28,8 +28,6 @@ fetch('./../../Data-base/Hot_drinks.json')
     document.getElementById('Hot_drinks_prise_12').textContent = data.Hot_drinks_prise_12;
     document.getElementById('Hot_drinks_type_13').textContent = data.Hot_drinks_type_13;
     document.getElementById('Hot_drinks_prise_13').textContent = data.Hot_drinks_prise_13;
-    document.getElementById('Hot_drinks_type_13').textContent = data.Hot_drinks_type_13;
-    document.getElementById('Hot_drinks_prise_13').textContent = data.Hot_drinks_prise_13;
     document.getElementById('Hot_drinks_type_14').textContent = data.Hot_drinks_type_14;
     document.getElementById('Hot_drinks_prise_14').textContent = data.Hot_drinks_prise_14;
     document.getElementById('Hot_drinks_type_15').textContent = data.Hot_drinks_type_15;

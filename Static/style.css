@@ -1800,13 +1800,13 @@ input[type="text"], button {
   
   }
   .journey__card:nth-child(1) {
-    background-image: url("./images/ofer.png");
+    background-image: url("./images/اساسيات/ofer.png");
   }
   .journey__card:nth-child(2) {
-    background-image: url("./images/ofer.png");
+    background-image: url("./images/اساسيات/ofer.png");
   }
   .journey__card:nth-child(3) {
-    background-image: url("./images/ofer.png");
+    background-image: url("./images/اساسيات/ofer.png");
   }
   .journey__card__bg h4 {
     font-size: 2rem;
@@ -1890,3 +1890,24 @@ input[type="text"], button {
   }
   
 
+
+
+
+
+
+
+
+
+  #totalPrice {
+    font-size: 19px; 
+    font-weight: bold; 
+    color: #fd4b4b; 
+    text-align: center;
+    padding: 10px; 
+    border: 2px solid #311919; 
+    border-radius: 8px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    margin: 20px auto;
+    width: 80%;
+}

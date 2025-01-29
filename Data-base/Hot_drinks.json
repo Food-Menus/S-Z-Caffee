@@ -1,42 +1,76 @@
 {    
     "Hot_drinks_type_1" : "إسبـــريســــو",
     "Hot_drinks_prise_1" : "55",
+
     "Hot_drinks_type_2" : "ميكــــاتــــو",
     "Hot_drinks_prise_2" : "50",
+
     "Hot_drinks_type_3" : "ميكـــاتـــو كراميــل",
     "Hot_drinks_prise_3" : "50",
+
     "Hot_drinks_type_4" : "كورتادو",
     "Hot_drinks_prise_4" : "50",
+
     "Hot_drinks_type_5" : "فلات وايت",
     "Hot_drinks_prise_5" : "50",
+
     "Hot_drinks_type_6" : "كابتشينـــــو",
     "Hot_drinks_prise_6" : "50",
+
     "Hot_drinks_type_7" : "لاتيـــــه",
     "Hot_drinks_prise_7" : "50",
+
     "Hot_drinks_type_8" : "موكــــا",
     "Hot_drinks_prise_8" : "50 ", 
+
     "Hot_drinks_type_9" : "مكسيكي كوفي",
     "Hot_drinks_prise_9" : "55",
+
     "Hot_drinks_type_10" : "قهوة بندق",
     "Hot_drinks_prise_10" : "40 ",
+
     "Hot_drinks_type_11" : "قهوة فرنساوي",
     "Hot_drinks_prise_11" : "40 ",
+
     "Hot_drinks_type_12" : "قهوة نوتيلا",
     "Hot_drinks_prise_12" : "40 ",
+
     "Hot_drinks_type_13" : "قهـــوة تــركــي",
     "Hot_drinks_prise_13" : "30",
+
     "Hot_drinks_type_14" : "هــوت سيـــدر",
     "Hot_drinks_prise_14" : "45",
+
     "Hot_drinks_type_15" : "سحلب",
     "Hot_drinks_prise_15" : "50",
+
     "Hot_drinks_type_16" : "شـــــــاي",
     "Hot_drinks_prise_16" : "20",
+
     "Hot_drinks_type_17" : "شاي أخضر",
     "Hot_drinks_prise_17" : "20",
+
     "Hot_drinks_type_18" : "ينســــــــون",
     "Hot_drinks_prise_18" : "25",
+
     "Hot_drinks_type_19" : "قـــرفـــة",
     "Hot_drinks_prise_19" : "35",
+
     "Hot_drinks_type_20" : "جنــزبيـــــل",
-    "Hot_drinks_prise_20" : "35"
+    "Hot_drinks_prise_20" : "35",
+
+    "Hot_drinks_type_21" : "",
+    "Hot_drinks_prise_21" : "",
+
+    "Hot_drinks_type_22" : "",
+    "Hot_drinks_prise_22" : "",
+
+    "Hot_drinks_type_23" : "",
+    "Hot_drinks_prise_23" : "",
+
+    "Hot_drinks_type_24" : "",
+    "Hot_drinks_prise_24" : "",
+
+    "Hot_drinks_type_25" : "",
+    "Hot_drinks_prise_25" : ""
 }

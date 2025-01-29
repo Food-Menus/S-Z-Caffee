@@ -14,6 +14,15 @@ fetch('./../../Data-base/Soft_drinks.json')
     document.getElementById('Soft_drinks_prise_5').textContent = data.Soft_drinks_prise_5;
     document.getElementById('Soft_drinks_type_6').textContent = data.Soft_drinks_type_6;
     document.getElementById('Soft_drinks_prise_6').textContent = data.Soft_drinks_prise_6;
-
+    document.getElementById('Soft_drinks_type_7').textContent = data.Soft_drinks_type_7;
+    document.getElementById('Soft_drinks_prise_7').textContent = data.Soft_drinks_prise_7;
+    document.getElementById('Soft_drinks_type_8').textContent = data.Soft_drinks_type_8;
+    document.getElementById('Soft_drinks_prise_8').textContent = data.Soft_drinks_prise_8;
+    document.getElementById('Soft_drinks_type_9').textContent = data.Soft_drinks_type_9;
+    document.getElementById('Soft_drinks_prise_9').textContent = data.Soft_drinks_prise_9;
+    document.getElementById('Soft_drinks_type_10').textContent = data.Soft_drinks_type_10;
+    document.getElementById('Soft_drinks_prise_10').textContent = data.Soft_drinks_prise_10;
+    document.getElementById('Soft_drinks_type_11').textContent = data.Soft_drinks_type_11;
+    document.getElementById('Soft_drinks_prise_11').textContent = data.Soft_drinks_prise_11;
 
   });
