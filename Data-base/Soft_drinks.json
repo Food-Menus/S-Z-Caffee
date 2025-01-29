@@ -1,9 +1,24 @@
 {
-    "Soft_drinks_type_1" : "مـــوســــى",
-    "Soft_drinks_prise_1" : "35",
+    "Soft_drinks_type_1_1" : " مـــوســــى (تفاح)",
+    "Soft_drinks_prise_1_1" : "35",
+    "Soft_drinks_type_1_2" : "مـــوســــى (فروله)",
+    "Soft_drinks_prise_1_2" : "35",
+    "Soft_drinks_type_1_3" : "مـــوســــى (رمان)",
+    "Soft_drinks_prise_1_3" : "35",
+    "Soft_drinks_type_1_4" : "مـــوســــى (ليمون نعناع)",
+    "Soft_drinks_prise_1_4" : "35",
+    "Soft_drinks_type_1_5" : "مـــوســــى (شعير)",
+    "Soft_drinks_prise_1_5" : "35",
 
-    "Soft_drinks_type_2" : "شــويبــــس",
-    "Soft_drinks_prise_2" : "25",
+    "Soft_drinks_type_2_1" : "شــويبــــس (أناناس)",
+    "Soft_drinks_prise_2_1" : "25",
+    "Soft_drinks_type_2_2" : "شــويبــــس (رمان)",
+    "Soft_drinks_prise_2_2" : "25",
+    "Soft_drinks_type_2_3" : "شــويبــــس (ليمون)",
+    "Soft_drinks_prise_2_3" : "25",
+    "Soft_drinks_type_2_4" : "شــويبــــس (جولد)",
+    "Soft_drinks_prise_2_4" : "25",
+    
 
     "Soft_drinks_type_3" : "فيـــروز",
     "Soft_drinks_prise_3" : "30",
