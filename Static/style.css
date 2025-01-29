@@ -745,6 +745,19 @@ input[type="text"], button {
     padding: 5px;
     font-size: 20px;
 }
+#totalPrice {
+    font-size: 19px; 
+    font-weight: bold; 
+    color: #fd4b4b; 
+    text-align: center;
+    padding: 10px; 
+    border: 2px solid #311919; 
+    border-radius: 8px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    margin: 20px auto;
+    width: 80%;
+}
 
 
 
@@ -778,9 +791,6 @@ input[type="text"], button {
     margin-left: 10px;
 
 }
-
-
-
 #overlayImage {
     position: fixed;
     top: 25%;
@@ -811,6 +821,139 @@ input[type="text"], button {
 .material-icons{
     font-size: 40px;
 }
+
+
+
+
+
+
+  
+
+.journey__grid {
+    margin-top: 0;
+    display: grid;
+    gap: 0 0;
+    color: white;
+  
+  }
+  .journey__card {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 10px;
+    margin-top: 12px;
+    color: white;
+  
+  }
+  .journey__card__bg {
+    padding: 3rem;
+    padding-top: 8rem;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+  
+  }
+  .journey__card:nth-child(1) {
+    background-image: url("./images/اساسيات/ofer.png");
+  }
+  .journey__card:nth-child(2) {
+    background-image: url("./images/اساسيات/ofer.png");
+  }
+  .journey__card:nth-child(3) {
+    background-image: url("./images/اساسيات/ofer.png");
+  }
+  .journey__card__bg h4 {
+    font-size: 2rem;
+    color: var(--white);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .journey__card__content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    background-color: var(--greyColor);
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    transition: 0.3s;
+    color: white;
+  
+  }
+  .journey__card:hover .journey__card__content {
+    top: 0;
+    color: white;
+  
+  }
+  .journey__card__content h4 {
+    margin-bottom: 1rem;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+  
+  }
+  .journey__card__content p {
+    
+    color: var(--extra-light);
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--white);
+  }
+  
+  
+  
+  
+
+
+  
+  .event__content {
+    display: grid;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: #2e2b28;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  .event__details {
+    text-align: center;
+  }
+  .event__details h3 {
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: "Noto Kufi Arabic", sans-serif;
+    color: var(--softGreenColor);
+  }
+  .event__details h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Noto Kufi Arabic", sans-serif;
+    color: var(--softGreenColor);
+  }
+  .event__details p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: "Noto Kufi Arabic", sans-serif;
+  }
+  .event__details .section__header {
+    margin-bottom: 1rem;
+  }
+  
+
+
+
+
 
 
 
@@ -1278,9 +1421,9 @@ input[type="text"], button {
         justify-content: space-around;
         background-color: var(--whiteColor);
         border-radius: 50px;
-        box-shadow: 0 0 10px rgb(255, 4, 4),
-        0 0 10px rgb(248, 8, 0),
-        0 0 10px rgb(255, 0, 0);
+        box-shadow: 0 0 10px rgb(255, 184, 4),
+        0 0 10px rgb(248, 215, 0),
+        0 0 10px rgb(255, 179, 0);
     }
     .img img {
         width: 220px;
@@ -1345,9 +1488,9 @@ input[type="text"], button {
         justify-content: space-around;
         background-color: var(--whiteColor);
         border-radius: 50px;
-        box-shadow: 0 0 10px rgb(255, 4, 4),
-        0 0 10px rgb(248, 0, 0),
-        0 0 10px rgb(255, 0, 0);
+        box-shadow: 0 0 10px rgb(255, 200, 0),
+        0 0 10px rgb(248, 219, 0),
+        0 0 10px rgb(255, 183, 0);
     }
     .img img {
         width: 200px;
@@ -1761,153 +1904,3 @@ input[type="text"], button {
 
 
 
-
-
-
-
-
-  
-
-  .journey__grid {
-    margin-top: 0;
-    display: grid;
-    gap: 0 0;
-    color: white;
-  
-  }
-  .journey__card {
-    position: relative;
-    isolation: isolate;
-    overflow: hidden;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 1rem;
-    margin-left: 2px;
-    margin-right: 2px;
-    margin-bottom: 10px;
-    margin-top: 12px;
-    color: white;
-  
-  }
-  .journey__card__bg {
-    padding: 3rem;
-    padding-top: 8rem;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 1rem;
-  
-  }
-  .journey__card:nth-child(1) {
-    background-image: url("./images/اساسيات/ofer.png");
-  }
-  .journey__card:nth-child(2) {
-    background-image: url("./images/اساسيات/ofer.png");
-  }
-  .journey__card:nth-child(3) {
-    background-image: url("./images/اساسيات/ofer.png");
-  }
-  .journey__card__bg h4 {
-    font-size: 2rem;
-    color: var(--white);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .journey__card__content {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 2rem;
-    background-color: var(--greyColor);
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
-    transition: 0.3s;
-    color: white;
-  
-  }
-  .journey__card:hover .journey__card__content {
-    top: 0;
-    color: white;
-  
-  }
-  .journey__card__content h4 {
-    margin-bottom: 1rem;
-    color: var(--white);
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--white);
-  
-  }
-  .journey__card__content p {
-    
-    color: var(--extra-light);
-    margin-bottom: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: var(--white);
-  }
-  
-  
-  
-  
-
-
-  
-  .event__content {
-    display: grid;
-    gap: 2rem;
-    padding: 1rem;
-    background-color: #2e2b28;
-    border-radius: 10px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
-  }
-  .event__details {
-    text-align: center;
-  }
-  .event__details h3 {
-    font-size: 3rem;
-    font-weight: 500;
-    font-family: "Noto Kufi Arabic", sans-serif;
-    color: var(--softGreenColor);
-  }
-  .event__details h2 {
-    font-size: 2rem;
-    font-weight: 500;
-    font-family: "Noto Kufi Arabic", sans-serif;
-    color: var(--softGreenColor);
-  }
-  .event__details p {
-    font-size: 1.3rem;
-    font-weight: 500;
-    font-family: "Noto Kufi Arabic", sans-serif;
-  }
-  .event__details .section__header {
-    margin-bottom: 1rem;
-  }
-  
-
-
-
-
-
-
-
-
-
-  #totalPrice {
-    font-size: 19px; 
-    font-weight: bold; 
-    color: #fd4b4b; 
-    text-align: center;
-    padding: 10px; 
-    border: 2px solid #311919; 
-    border-radius: 8px; 
-    background-color: #f9f9f9; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-    margin: 20px auto;
-    width: 80%;
-}

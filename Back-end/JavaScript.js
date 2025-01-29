@@ -2,7 +2,7 @@
 function openWhatsApp() {
     const name = document.getElementById('name').value;
     const adress = document.getElementById('adress').value;
-    const phoneNumber = "+201112824017"; 
+    const phoneNumber = "+201147182463"; 
 
     // استرجاع البيانات من localStorage
     const storedData = localStorage.getItem("userData");
@@ -19,25 +19,6 @@ function openWhatsApp() {
     window.open(whatsappUrl, '_blank');
 }
 
-function openTelegram() {
-    const name = document.getElementById('name').value;
-    const adress = document.getElementById('adress').value;
-    const username = "+201112824017"; // استبدل بـ username بوت التليجرام الخاص بك
-
-    // استرجاع البيانات من localStorage
-    const storedData = localStorage.getItem("userData");
-    const dishes = JSON.parse(storedData);
-
-    // بناء رسالة التليجرام مع سرد الأطباق وعدد الطلبات
-    let message = `أهلاً، اسمي ${name} وأود طلب:\n`;
-    dishes.forEach(dish => {
-        message += `* ${dish.name} (عدد الطلبات: ${dish.count})\n`;
-    });
-    message += `على عنوان ${adress}`;
-
-    const telegramUrl = `https://t.me/${username}?start=${encodeURIComponent(message)}`;
-    window.open(telegramUrl, '_blank');
-}
 
 
 
