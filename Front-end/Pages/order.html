@@ -65,7 +65,7 @@
             const list = document.createElement('ul');
             dishes.forEach(dish => {
                 dishCounts[dish.name] = (dishCounts[dish.name] || 0) + 1;
-                totalPrice += dish.price; // افترض أن كل عنصر يحتوي على خاصية السعر
+                totalPrice += Number(dish.price); // تحويل السعر إلى رقم
             });
     
             // هنا نبدأ في الجزء الجديد لتخزين البيانات المعدلة
